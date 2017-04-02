@@ -2,6 +2,7 @@ from aiohttp import web
 from sql.sql_reqs import *
 import parse
 from datetime import datetime
+from json import dumps
 
 
 async def index(request):
@@ -11,7 +12,7 @@ async def get_handler(request):
     user_id = parse.parse(r'/api/{}/',str(request.rel_url))[0]
     response = await get_user_data(request, user_id)
     if response:
-        return web.json_response(data=response, status=200)
+        return web.json_response(data=dumps(response), status=200)
     return web.json_response(data={'Error': 'No data for id = %s' % user_id}, status=400)
 
 
