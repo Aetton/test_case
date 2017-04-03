@@ -70,11 +70,11 @@ Date: Sun, 02 Apr 2017 21:39:22 GMT
 Server: Python/3.5 aiohttp/2.0.5
 {
   date: "2017-04-03 00:59:53.667318"
-  id: "test_id"
-  arpu: "4570"
-  name: "John Doe"
-  soc_tariff: "TESTSOC"
-  phone: "9156685347"
+  "id": "test_id"
+  "arpu": "4570"
+  "name": "John Doe"
+  "soc_tariff": "TESTSOC"
+  "phone": "9156685347"
 }
 ```
 
